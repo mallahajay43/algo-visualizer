@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sieve-style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-right">
+            AlgoViz
+        </div>
+        <div class="nav-left">
+            <div class="nav-menu">
+               <a href="index.html">Sorting</a> 
+            </div>
+            <div class="nav-menu">
+                <a href="sieve.html">Sieve</a> 
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="contents">
+            <div class="code">
+                <img src="img/sieve.png" alt="">
+            </div>
+            <div class="vis">
+
+            </div>
+        </div>
+        <div class="btns">
+            <div class="slider btn">
+            <span class="txt">Speed</span>
+            <input type="range" min="1" max="1000" value="30" class="speed">
+            </div>
+            <button type="button" id="simulate" class="btn">Simulate</button>
+        </div>
+    </div>
+
+    <script src="sieve.js"></script>
+</body>
+</html>

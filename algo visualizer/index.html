@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algo visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-right">
+            AlgoViz
+        </div>
+        <div class="nav-left">
+            <div class="nav-menu">
+                <a href="index.html">Sorting</a> 
+             </div>
+             <div class="nav-menu">
+                 <a href="sieve.html">Sieve</a> 
+             </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="contents"></div>
+        <div class="btns">
+            <!-- <button type="button" id="newArray" class="btn">new Array</button> -->
+            <div class="slider btn">
+            <span class="txt">Array size</span>
+            <input type="range" min="1" max="200" value="30" class="size">
+            </div>
+            <div class="slider btn">
+            <span class="txt">Speed</span>
+            <input type="range" min="1" max="1000" value="30" class="speed">
+            </div>
+            <button type="button" id="short" class="btn">Short</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
