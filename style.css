@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg1:#222831;
+    --bg2:#393E46;
+    --fonrCol:#EEEEEE;
+}
+
+body{
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0 10%;
+    background-color: var(--bg1);
+    color: var(--fonrCol);
+}
+nav{
+    height: 50px;
+    padding: 0 20px;
+    background-color :var(--bg2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.options{
+    position: relative;
+    display: none;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: right;
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 15px;
+}
+
+.nav-menu:hover .options{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contents{
+    height: 82vh;
+    display: flex;
+    position: relative;
+    transform: rotateZ(180deg);
+}
+
+.container{
+}
+.btns{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btns button{
+    color: var(--fonrCol);
+    background-color: var(--bg2);
+    border: 2px solid var(--bg1);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btns button:hover{
+    box-shadow: 2px 2px 5px rgb(53, 177, 199);
+}
+
+.btn{
+    margin: 0 20px;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+.txt{
+    margin: 0 10px;
+}
+
+.bar{
+    background-color: cyan;
+    height: 60px;
+    width: 30px;
+    border:1px solid var(--bg1);
+}
+
